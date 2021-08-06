@@ -1071,13 +1071,13 @@ private struct ChildScrollViewInfo {
         self.setNeedsDisplay()
     }
 
-    public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        if #available(iOS 13.0, *) {
-            if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
-                updateVisuals()
-            }
-        }
-    }
+//    public override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+//        if #available(iOS 13.0, *) {
+//            if traitCollection.hasDifferentColorAppearance(comparedTo: previousTraitCollection) {
+//                updateVisuals()
+//            }
+//        }
+//    }
 
     private func roundTopRightLeftCorners(_ layer: CALayer) {
         if #available(iOS 11.0, *) {
